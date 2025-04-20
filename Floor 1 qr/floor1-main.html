@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Floor - Campus Navigation</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Welcome to the First Floor</h1>
+    <p>You are now on the first floor. Where would you like to go?</p>
+
+    <ul>
+        <li><a href="architecture-faculty-room.html">Architecture Faculty Room</a></li>
+        <li><a href="cad-lab.html">CAD Lab</a></li>
+        <li><a href="chemistry-lab.html">Chemistry Lab</a></li>
+        <li><a href="civil-hod-office.html">Civil HOD Office</a></li>
+        <li><a href="civil-staff-room.html">Civil Staff Room</a></li>
+        <li><a href="dean-sop-office.html">Dean (School of Pharmacy) Office</a></li>
+        <li><a href="doctors-office.html">Doctor's Office</a></li>
+        <li><a href="drawing-hall.html">Drawing Hall</a></li>
+        <li><a href="exam-cell.html">Exam Cell</a></li>
+        <li><a href="iqac.html">IQAC Office</a></li>
+        <li><a href="soa-dean-office.html">SOA Dean Office</a></li>
+        <li><a href="soet-dean-office.html">SOET Dean Office</a></li>
+        <li><a href="toilet-engg.html">Engineering Toilet</a></li>
+    </ul>
+
+    <!-- Button to Toggle Map Visibility -->
+    <button id="toggleMapButton" onclick="toggleMap()">Show First Floor Map</button>
+
+    <!-- Hidden Map Section -->
+    <div id="mapSection" style="display: none;">
+        <h2>First Floor Map</h2>
+        <img src="../images/floor1.png" alt="First Floor Map" style="width: 100%; height: auto; border-radius: 10px;">
+    </div>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

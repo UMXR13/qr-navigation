@@ -1,0 +1,158 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header styles */
+h1 {
+    color: #003366; /* Dark Blue for the main header */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph and text styles */
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #333; /* Dark text */
+}
+
+/* List styles for location links */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+/* Button (link) styles */
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff; /* White text on buttons */
+    background-color: #FF6600; /* Orange button background */
+    padding: 12px 20px;
+    border-radius: 25px; /* Rounded corners */
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 5px 0; /* Margin between buttons */
+}
+
+/* Hover effect for buttons */
+a:hover {
+    background-color: #003366; /* Change to dark blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+}
+
+/* Active button effect */
+a:active {
+    transform: scale(0.98); /* Slightly reduces size on click */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Lightens the shadow */
+}
+
+/* Map display section */
+#map {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the map */
+}
+
+/* Back to main entrance link */
+a[href="qr-main-entrance.html"] {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #003366; /* Dark Blue for "Back to Main Entrance" */
+    border-radius: 25px;
+}
+
+a[href="qr-main-entrance.html"]:hover {
+    background-color: #FF6600; /* Orange on hover */
+}
+
+/* Small font for directions */
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer or bottom sections */
+footer {
+    background-color: #003366; /* Dark blue footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Button to toggle map visibility */
+#toggleMapButton {
+    padding: 12px 24px;
+    background-color: #FF6600; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+#toggleMapButton:hover {
+    background-color: #003366; /* Blue color on hover */
+}
+
+/* Map Section Styling */
+#mapSection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the map horizontally */
+    align-items: center; /* Center the map vertically if necessary */
+    max-width: 100%;
+    height: auto;
+}
+
+#mapSection img {
+    width: 80%; /* Adjust width for better responsiveness */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the map image */
+    max-width: 100%; /* Ensures the image fits within the container */
+}
+
+/* Smooth Map Section Toggle */
+#mapSection {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+#mapSection.show {
+    display: block;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller header size */
+    }
+
+    p, a, button {
+        font-size: 1em; /* Smaller text for buttons and paragraphs */
+    }
+
+    #mapSection img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

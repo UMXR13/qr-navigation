@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Entrance - Campus Navigation</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Welcome to AIKTC</h1>
+    <p>You are at the Main Entrance. Where would you like to go?</p>
+
+    <ul>
+        <li><a href="auditorium.html">Auditorium</a></li>
+        <li><a href="admin-office.html">Admin Office</a></li>
+        <li><a href="haas-dept.html">HAAS Dept</a></li>
+        <li><a href="soet.html">SOET (School of Engineering and Technology)</a></li>
+        <li><a href="sop.html">SOP (School of Pharmacy)</a></li>
+        <li><a href="soa.html">SOA (School of Architecture)</a></li>
+        <li><a href="canteen.html">Canteen</a></li>
+        <li><a href="ground.html">Ground</a></li>
+        <li><a href="incubation-centre.html">Incubation Centre</a></li>
+    </ul>
+
+    <!-- Button to Toggle Map Visibility -->
+    <button id="toggleMapButton" onclick="toggleMap()">Show Campus Map</button>
+
+    <!-- Hidden Map Section -->
+    <div id="mapSection" style="display: none;">
+        <h2>Campus Map</h2>
+        <img src="../images/main-entrance-map.png" alt="Campus Map" style="width: 80%; height: auto; border-radius: 10px;">
+    </div>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
